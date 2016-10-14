@@ -5,7 +5,10 @@ import java.util.GregorianCalendar;
 
 public class ImprimeixExecucioTasca implements Runnable{
 
-
+        /**
+         * Gracies a la classe Calendar pasem l'hora, els minuts i els segons
+         * a cadascuna de les variables hora, min, seg respectivament i l'imprimim.
+         */
         @Override
         public void run() {
 

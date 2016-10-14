@@ -12,6 +12,13 @@ public class TascaProgramada {
 
     public static void main(String[] args) {
         
+        /**
+         * Declarem scheduledThreadPool per a crear les dos pools, a continuacio
+         * cridem a scheduleWithFixedDelay i l'hi pasem l'objecte ImprimeixExecucioTasca(),
+         * el temps per a que comenci, el delay que tindra, i la unitat metrica.
+         * Despres en un try catch per a finalitzar, gracies a awaitTermination 
+         * posem un limit d'execució. I finalitzem amb shutdown().
+         */
         ScheduledExecutorService scheduledThreadPool = Executors.newScheduledThreadPool(2);
 
         scheduledThreadPool.scheduleWithFixedDelay(new ImprimeixExecucioTasca(), 2, 3, TimeUnit.SECONDS);
